@@ -35,7 +35,7 @@ This model can understand instructions in both **English and Marathi** and respo
 | **Quantization** | 4-bit (bitsandbytes) |
 | **Training Platform** | Kaggle (T4 GPU) |
 | **Training Steps** | 120 |
-| **Final Loss** | ~1.2 |
+| **Final Loss** | **0.1161** (excellent convergence!) |
 | **Dataset Size** | 1,020+ bilingual instruction-output pairs |
 
 ---

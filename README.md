@@ -20,7 +20,7 @@ The trained LoRA adapters and tokenizer are published on the Hugging Face Hub. Y
 | **Fine-tuning Method** | LoRA 4-bit (via Unsloth) |
 | **Dataset** | 1,020+ bilingual instruction-output pairs |
 | **Training Platform** | Kaggle (T4 GPU) |
-| **Final Loss** | ~1.2 |
+| **Final Loss** | **0.1161** (excellent convergence!) |
 | **Experiment Tracking** | Weights & Biases (W&B) |
 | **License** | MIT |
 
