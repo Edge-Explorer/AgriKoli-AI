@@ -4,12 +4,6 @@
 
 A fine-tuned **Llama-3.2-3B-Instruct** model for the **Agri/Koli Marathi dialect** — a coastal dialect spoken by the indigenous fishing and farming communities of Maharashtra, India.
 
-## 🤗 Model on Hugging Face
-
-👉 **[Karan6124/AgriKoli-Llama-3.2-3B](https://huggingface.co/Karan6124/AgriKoli-Llama-3.2-3B)**
-
-The trained LoRA adapters and tokenizer are published on the Hugging Face Hub. You can run inference directly from there without any local setup.
-
 ---
 
 ## 🏆 Project Status
