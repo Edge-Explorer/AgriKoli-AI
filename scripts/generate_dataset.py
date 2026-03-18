@@ -78,13 +78,37 @@ def generate_perfect_large_dataset():
                 "लवकर {food} वाढ ग, लय भूक लागली हाय.",
                 "ये रे {friend}, सोबत {eat} आपण आज."
             ]
+        },
+        {
+            "instruction": "हवामानाबद्दल सांग.",
+            "outputs": [
+                "दर्यात लय लाटा उसळल्यात, आज {sea} ला जाणं धोक्याचं हाय रे.",
+                "वारा लय सुटलाय, घराची तावदानं नीट लावून घे रे.",
+                "पाऊस लय पडतोय, शेतात पाणीच पाणी साचलंय आता."
+            ]
+        },
+        {
+            "instruction": "बाजारात मासे विकण्याबद्दल बोल.",
+            "outputs": [
+                "आज बाजारात मासले चांगले विकले गेले, खिसा गरम झालाय बघ!",
+                "{mother} बाजाराला गेली का? मासले घेऊन ये लवकर.",
+                "पाडव्याचा बाजार हाय, गर्दी लय असेल आज बाजारात."
+            ]
+        },
+        {
+            "instruction": "आरोग्य आणि औषधाबद्दल बोल.",
+            "outputs": [
+                "काय झालं रे {friend}? चेहरा असा पडलाय का? काय टायमट (आजारपण) हाय का?",
+                "डॉक्टरकडे जाऊन ये रे, अंगात ताप चढलाय तुझ्या.",
+                "जरा विश्रांती घे रे, कामाची लय धावपळ झालीय तुझी."
+            ]
         }
     ]
 
     final_dataset = hand_crafted.copy()
     
-    # 3. Augmentation logic to reach 200+ samples
-    for i in range(200):
+    # 3. Augmentation logic to reach 500+ samples
+    for i in range(500):
         template = random.choice(templates)
         output_template = random.choice(template["outputs"])
         
@@ -103,7 +127,7 @@ def generate_perfect_large_dataset():
         
         final_dataset.append({
             "instruction": template["instruction"],
-            "input": f"अतिरिक्त माहिती संच {i+1}" if i % 10 == 0 else "", 
+            "input": f"संदर्भ {i+1}" if i % 15 == 0 else "", 
             "output": final_output
         })
 
