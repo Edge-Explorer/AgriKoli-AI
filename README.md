@@ -1,5 +1,7 @@
 # 🌾🐟 AgriKoli AI — Llama-3.2 (3B) Fine-tuning
 
+[![Hugging Face Model](https://img.shields.io/badge/🤗%20Hugging%20Face-Model-yellow)](https://huggingface.co/Karan6124/AgriKoli-Llama-3.2-3B)
+
 A fine-tuned **Llama-3.2-3B-Instruct** model for the **Agri/Koli Marathi dialect** — a coastal dialect spoken by the indigenous fishing and farming communities of Maharashtra, India.
 
 ## 🤗 Model on Hugging Face
