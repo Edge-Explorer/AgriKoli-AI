@@ -1,10 +1,48 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
+# General IDE/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 
-# Virtual environments
-.venv
+# Environments
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Model Checkpoints & Outputs
+models/
+checkpoint-*/
+outputs/
+*.bin
+*.pt
+*.safetensors
+
+# Data/Temporary Files
+tmp/
+.ipynb_checkpoints/
+*.log
+
+# 🚨 Security Patterns (Required by DevGuardian)
+.env
+*.env
+.env.*
+.env.local
+.env.production
+.env.staging
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+secrets/
+credentials/
+.aws/
+service-account*.json
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
