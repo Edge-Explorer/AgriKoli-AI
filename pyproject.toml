@@ -1,0 +1,24 @@
+[project]
+name = "agrikoli-ai"
+version = "0.1.0"
+description = "Fine-tuning Phi-2 for Agri/Koli Marathi dialect using Unsloth"
+dependencies = [
+    "torch",
+    "unsloth",
+    "xformers",
+    "bitsandbytes",
+    "peft",
+    "transformers",
+    "accelerate",
+    "datasets",
+    "trl",
+    "sentencepiece",
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.uv]
+dev-dependencies = [
+    "ipykernel",
+    "ipywidgets",
+]
