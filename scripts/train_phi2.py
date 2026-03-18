@@ -55,9 +55,8 @@ def formatting_prompts_func(examples):
         texts.append(text)
     return { "text" : texts, }
 
-# Load your custom dataset (when ready)
-# dataset = load_dataset("json", data_files="data/agrikoli_dataset.json", split="train")
-# dataset = dataset.map(formatting_prompts_func, batched = True,)
+# Load your custom dataset
+dataset = load_dataset("json", data_files="data/agrikoli_training_dataset.json", split="train")
+dataset = dataset.map(formatting_prompts_func, batched = True,)
 
-# Trainer setup (to be finalized)
-# trainer = SFTTrainer(...)
+print(f"Dataset loaded with {len(dataset)} refined Agri/Koli samples.")
