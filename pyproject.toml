@@ -2,6 +2,10 @@
 name = "agrikoli-ai"
 version = "0.1.0"
 description = "Fine-tuning Llama-3.2 for Agri/Koli Marathi dialect using Unsloth"
+license = "MIT"
+authors = [
+    { name = "Karan Shelar" },
+]
 dependencies = [
     "torch",
     "unsloth",
