@@ -77,6 +77,16 @@ uv add torch unsloth xformers bitsandbytes peft transformers accelerate datasets
 
 ---
 
+## 📊 Training Metrics (W&B)
+
+### 📈 Training Loss & Parameters
+![Training Loss & Parameters](agrikoli%20train%20image.png)
+
+### 🖥️ System Performance
+![System performance during training](agrikoli%20system%20image.png)
+
+---
+
 ## 📜 License
 
 This project is released under the **MIT License**.
